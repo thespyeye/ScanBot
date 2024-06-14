@@ -4,10 +4,12 @@
 
 // Definitions for the functions in pointCloudConverter.c
 
+inline double getDistBetweenPoints(double* first, double* last);
+
 inline double d_abs(double x);
 
 inline double getSlope(double* first, double* last);
 
-double*** pointsToLinePairs(double** restrict targ, int size);
+double*** unsortedPointsToLinePairs(double** targ, int size, int* retSize);
 
 #endif
